@@ -4,7 +4,7 @@
 header('Content-type: text/css; charset: UTF-8');
 
 $logo = '/img/home/selectLogo.png';
-$background_img = '/img/home/background.jpeg';
+$background_img = '/img/home/background.jpg';
 $background_pattern = false; // set to true if it is a pattern
 
 $footer_color = '#fff';
