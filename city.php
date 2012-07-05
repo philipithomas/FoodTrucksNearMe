@@ -11,7 +11,7 @@ dbOpen();
 $query="select * from city where short=".mysql_real_escape($city);
 $cityResult=mysql_query($query);
 
-if (mysql_num_rows($city))==0 {
+if (mysql_num_rows($cityResult)!=1) {
 	// No city found
 	// Redirect to 404
 	session_destroy(); // Could be a corrupt session - e.g. city that was deleted 
