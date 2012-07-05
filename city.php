@@ -215,7 +215,7 @@ function widget($twitter,$name,$url,$menu,$description) {
 		// Title + twitter link
 		echo "<h2><a href=\"http://twitter.com/$twitter\" target=\"_BLANK\"><img src=\"http://api.twitter.com/1/users/profile_image?screen_name=$twitter&size=normal\"> </a>$name</h2>"; 
 		
-		if (!empty($description)){ 
+		if (!empty($description)) { 
 			// Show the description
 			echo "<small><em>$description</em></small><br />";
 		}
@@ -261,7 +261,7 @@ function widget($twitter,$name,$url,$menu,$description) {
 	
 		echo '</div>'; // end span3
 	
-	}
+	
 	
 }
 
