@@ -23,7 +23,7 @@
 	<img src="/img/home/selectLogo.png" alt="logo" <?php echo $attr;?> />
 	<div id="content">
 		<p>Select your City</p>
-		<p class="signup">This is signup text</p>
+		<p class="signup">Can't find your city? <a href="mailto:contact@foodtruckdashboard.com?subject=I-Want-My-City!">Request it!</a></p>
 	</div>
 	
 	<div id="resp">
@@ -37,7 +37,7 @@
 		<a href="http://twitter.com/foodtruckdash" target="_BLANK"><img src="/img/home/twitter.png" alt="Twitter" width="32" height="32" /></a>
 		<a href="http://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807" target="_BLANK"><img src="/img/home/facebook.png" alt="Facebook" width="32" height="32" /></a>
 		<a href="/blog"><img src="/img/home/blogger.png" alt="Blog" width="32" height="32" /></a>
-		<a href="/about"><img src="img/website.png" alt="Website" width="32" height="32" /></a>
+		<a href="/about"><img src="img/home/website.png" alt="Website" width="32" height="32" /></a>
 	</div>
 </div>
 <footer> 
