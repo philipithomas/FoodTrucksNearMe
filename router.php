@@ -10,7 +10,7 @@ if (isset($_SESSION['city'])) {
 }
 else {
 	// If no city, go to home page to select a city
-	header("Location: /home"));
+	header("Location: /home");
 	exit;
 	
 }
