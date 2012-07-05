@@ -10,4 +10,9 @@ DirectoryIndex router.php
 RewriteRule ^city/(.*)$ city.php?c=$1
 RewriteRule ^home(.*)$ home.php
 RewriteRule ^about(.*)$ about.php
+RewriteRule ^contact(.*)$ contact.php
+RewriteRule ^trucks(.*)$ trucks.php
 
+
+
+RewriteRule ^404/(.*)$ error/404.php

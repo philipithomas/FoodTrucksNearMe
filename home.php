@@ -1,4 +1,8 @@
 <?php
+session_start();
+require_once('./inc/functions.inc');
+
+
 // redirected here from /home via .htaccess
 
 // This file will use the landing page on github
@@ -23,7 +27,7 @@
 	<img src="/img/home/selectLogo.png" alt="logo" <?php echo $attr;?> />
 	<div id="content">
 		<p>Select your City</p>
-		<p class="signup">Can't find your city? <a href="mailto:contact@foodtruckdashboard.com?subject=I-Want-My-City!">Request it!</a></p>
+		<p class="signup">Can't find your city? <a href="/contact">Request it!</a></p>
 	</div>
 	
 	<div id="resp">
@@ -41,7 +45,7 @@
 	</div>
 </div>
 <footer> 
-	<a href="http://www.flickr.com/photos/mastermaq/5875801264/">Background image licensed under Creative Commons</a>.
+	<a href="http://www.flickr.com/photos/mastermaq/5875801264/">Background image licensed under Creative Commons</a>. <?php footerText();?>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js"></script>
 </body>
