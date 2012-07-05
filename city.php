@@ -31,7 +31,6 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	$facebook=$city['facebook'];
 	$alert=$city['alert'];
 	$alertClass=$city['alertClass'];
-	$alertTitle=$city['alertTitle'];
 	$alertMessage=$city['alertMessage'];
 	
 // Set the session to be the city
