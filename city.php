@@ -1,3 +1,3 @@
 <?php
-echo $_RETRIEVE['c'];
+echo $_POST['c'];
 ?>
