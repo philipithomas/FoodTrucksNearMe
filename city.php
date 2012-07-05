@@ -16,7 +16,7 @@ if (mysql_num_rows($cityResult)!=1) {
 	// Redirect to 404
 	session_destroy(); // Could be a corrupt session - e.g. city that was deleted 
 	
-	header("Location: /404"));
+	header("Location: /404");
 	exit();
 	
 }
