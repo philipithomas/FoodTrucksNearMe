@@ -4,5 +4,6 @@ RewriteBase /
 
 
 RewriteRule ^city/(.*)$ city.php?c=$1
+RewriteRule ^home(.*)$ home.php
 
 DirectoryIndex router.php
