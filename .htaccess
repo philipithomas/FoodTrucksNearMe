@@ -1,1 +1,8 @@
-RewriteRule /city/(.*)/$ /city.php?c=$1
+Options +Indexes
+RewriteEngine on
+RewriteBase /
+
+
+RewriteRule ^city/(.*)/$ /city.php?c=$1
+
+DirectoryIndex router.php
