@@ -8,7 +8,7 @@ $city= strtolower(sanitize($_GET['c']));
 // First, we check if the city exists. If it does, then 
 dbOpen();
 
-$query="select * from city where short=\"".mysql_real_escape_string($city)."\"";
+$query="select * from city where short=\"".mysql_real_escape_string($city)."\"gi";
 $cityResult=mysql_query($query);
 
 if (mysql_num_rows($cityResult)!=1) {
@@ -27,7 +27,7 @@ if (mysql_num_rows($cityResult)!=1) {
 $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	$short=strtoupper($city['short']);
 	$long=$city['long'];
-	$twitter=$city['long'];
+	$twitter=$city['twitter'];
 	$facebook=$city['facebook'];
 	$alert=$city['alert'];
 	$alertClass=$city['alertClass'];
@@ -141,6 +141,9 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	<div style="clear: both"></div>
 	<a href="https://twitter.com/<?php echo $twitter;?>" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @<?php echo $twitter;?></a>
 	<div style="clear:both"></div>
+
+</div>
+</div>
 	
 
 
