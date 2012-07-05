@@ -1,4 +1,4 @@
-php_flag display_errors ong
+php_flag display_errors on
 
 Options +Indexes
 RewriteEngine on
