@@ -1,8 +1,10 @@
-DirectoryIndex router.php
+php_flag display_errors on
 
 Options +Indexes
 RewriteEngine on
 RewriteBase /
+
+DirectoryIndex router.php
 
 
 RewriteRule ^city/(.*)$ city.php?c=$1
