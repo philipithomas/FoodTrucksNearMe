@@ -1,4 +1,4 @@
-php_flag display_errors on
+php_flag display_errors ong
 
 Options +Indexes
 RewriteEngine on
@@ -9,4 +9,5 @@ DirectoryIndex router.php
 
 RewriteRule ^city/(.*)$ city.php?c=$1
 RewriteRule ^home(.*)$ home.php
+RewriteRule ^about(.*)$ about.php
 
