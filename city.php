@@ -8,7 +8,7 @@ $city= strtolower(sanitize($_GET['c']));
 // First, we check if the city exists. If it does, then 
 dbOpen();
 
-$query="select * from city where short=".mysql_real_escape($city);
+$query="select * from city where short=".mysql_real_escape_string($city);
 $cityResult=mysql_query($query);
 
 if (mysql_num_rows($cityResult)!=1) {
