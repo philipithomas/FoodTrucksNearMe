@@ -1,3 +1,3 @@
 <?php
-echo $_POST['c'];
+echo $_GET['c'];
 ?>
