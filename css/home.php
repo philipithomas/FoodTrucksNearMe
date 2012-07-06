@@ -48,6 +48,7 @@ html{
 	font-size: 62.5%;
 }
 <?php else:?>
+	
 html{
 	background: url(<?php echo '../'.$background_img;?>) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -57,6 +58,15 @@ html{
 	font-size: 62.5%;
 }
 <?php endif;?>
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
 #box{
 	width: 400px;
 	background: rgb(<?php echo $rgb;?>);
