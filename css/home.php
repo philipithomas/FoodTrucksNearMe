@@ -529,3 +529,20 @@ button.btn.small, input[type="submit"].btn.small {
 .btn-small .caret {
   margin-top: 4px;
 }
+
+
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #333333;
+  text-rendering: optimizelegibility;
+}

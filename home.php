@@ -31,8 +31,8 @@ require_once('./inc/functions.inc');
 	</div>
 	
 	<div id="resp">
-		<a href="/city/stl" class="btn btn-primary">St. Louis</a><br />
-		<a href="/city/cle" class="btn btn-primary">Cleveland</a><br />
+		<a href="/city/stl" class="btn btn-primary btn-large">St. Louis</a><br />
+		<a href="/city/cle" class="btn btn-primary btn-large">Cleveland</a><br />
 		
 		
 	</div>
