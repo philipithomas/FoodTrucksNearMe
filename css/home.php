@@ -4,7 +4,7 @@
 header('Content-type: text/css; charset: UTF-8');
 
 $logo = '/img/home/selectLogo.png';
-$background_img = '/img/home/background.jpg';
+$background_img = 'img/home/background.jpg';
 $background_pattern = false; // set to true if it is a pattern
 
 $footer_color = '#fff';
@@ -37,21 +37,11 @@ $rgb .= ', ' . hexdec(substr($hex, 4, 2));
 ?>
 @import url(/css/reset.css);
 
-<?php if($background_pattern):?>
 html{
 	background: url(<?php echo '../'.$background_img;?>);
 	font-size: 62.5%;
 }
-<?php else:?>
-html{
-	background: url(<?php echo '../'.$background_img;?>) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-size: 100%;
-}
-<?php endif;?>
+
 
 a {
   color: #0088cc;
@@ -145,8 +135,7 @@ footer, footer a{
 	color: <?php echo $footer_color;?>;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  font-size: 13px;
-	  line-height: 18px;
-	  color: #333333;
+
 }
 
 
