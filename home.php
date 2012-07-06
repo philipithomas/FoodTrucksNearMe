@@ -26,12 +26,12 @@ require_once('./inc/functions.inc');
 <div id="box">
 	<img src="/img/home/selectLogo.png" alt="logo" <?php echo $attr;?> />
 	<div id="content">
-		<p>Select your City</p>
-		<p class="signup">Can't find your city? <a href="/contact">Request it!</a></p>
+		<p><h2>Select your City</h2></p>
+	
 	</div>
 	
 	<div id="resp">
-		<a href="/city/stl" class="btn btn-primary btn-large">St. Louis</a><br />
+		<a href="/city/stl" class="btn btn-primary btn-large">St. Louis</a><br /><br />
 		<a href="/city/cle" class="btn btn-primary btn-large">Cleveland</a><br />
 		
 		
