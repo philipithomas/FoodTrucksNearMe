@@ -36,6 +36,7 @@ require_once('./inc/functions.inc');
 		
 		
 	</div>
+	<hr />
 	<div id="social">
 		<a href="http://twitter.com/foodtruckdash" target="_BLANK"><img src="/img/home/twitter.png" alt="Twitter" width="32" height="32" /></a>
 		<a href="http://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807" target="_BLANK"><img src="/img/home/facebook.png" alt="Facebook" width="32" height="32" /></a>
