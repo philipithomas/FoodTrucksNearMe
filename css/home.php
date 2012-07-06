@@ -149,8 +149,8 @@ footer{
 }
 footer, footer a{
 	color: <?php echo $footer_color;?>;
-	font-family: 'Museo', serif;
-	font-size: 1.2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 }
 
 label,
