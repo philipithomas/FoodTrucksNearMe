@@ -35,15 +35,10 @@ $rgb .= ', ' . hexdec(substr($hex, 4, 2));
 
 
 ?>
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
-@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
 @font-face{
-	font-family: 'Museo';
-	src: url('../fonts/museo300-regular-webfont.eot');
-	src: url('../fonts/museo300-regular-webfont.eot?iefix') format('eot'),
-		 url('../fonts/museo300-regular-webfont.woff') format('woff'),
-		 url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
-		 url('../fonts/museo300-regular-webfont.svg#webfontzR9Kk5PT') format('svg');
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 	font-weight: normal;
 	font-style: normal;
 }
