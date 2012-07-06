@@ -35,22 +35,33 @@ $rgb .= ', ' . hexdec(substr($hex, 4, 2));
 
 
 ?>
-@import url(/css/reset.css);
-
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@font-face{
+	font-family: 'Museo';
+	src: url('../fonts/museo300-regular-webfont.eot');
+	src: url('../fonts/museo300-regular-webfont.eot?iefix') format('eot'),
+		 url('../fonts/museo300-regular-webfont.woff') format('woff'),
+		 url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/museo300-regular-webfont.svg#webfontzR9Kk5PT') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+<?php if($background_pattern):?>
 html{
 	background: url(<?php echo '../'.$background_img;?>);
 	font-size: 62.5%;
 }
-
-
-a {
-  color: #0088cc;
-  text-decoration: none;
+<?php else:?>
+html{
+	background: url(<?php echo '../'.$background_img;?>) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size: 62.5%;
 }
-a:hover {
-  color: #005580;
-  text-decoration: underline;
-}
+<?php endif;?>
 #box{
 	width: 400px;
 	background: rgb(<?php echo $rgb;?>);
@@ -68,9 +79,10 @@ a:hover {
 	color: <?php echo $text_color;?>;
 	margin-top: 15px;
 	padding: 0 5px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  font-size: 13px;
-	  line-height: 18px;
+	font-size: 1.6em;
+	font-family: sans-serif;
+	font-family: "Museo", sans-serif;
+}
 .signup{
 	font-style: italic;
 	margin: 20px 0 5px 10px;
@@ -133,11 +145,8 @@ footer{
 }
 footer, footer a{
 	color: <?php echo $footer_color;?>;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  font-size: 13px;
-
-}
-
+	font-family: 'Museo', serif;
+	font-size: 1.2em;
 
 label,
 input,
