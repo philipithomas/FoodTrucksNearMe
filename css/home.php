@@ -62,6 +62,8 @@ html{
 a {
   color: #0088cc;
   text-decoration: none;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 }
 a:hover {
   color: #005580;
