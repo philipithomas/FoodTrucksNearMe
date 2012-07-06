@@ -135,7 +135,7 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
       </p>
 </div>
 <div class="span4">
-	<iframe src="//www.facebook.com/plugins/likebox.php?<?php echo urlencode($facebook);?>&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;appId=441862429180129" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
+	<?php echo $facebook;?>
 	
 	<div style="clear: both"></div>
 	<a href="https://twitter.com/<?php echo $twitter;?>" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @<?php echo $twitter;?></a>
