@@ -81,7 +81,6 @@ a:hover {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  font-size: 13px;
 	  line-height: 18px;
-	  color: #333333;
 .signup{
 	font-style: italic;
 	margin: 20px 0 5px 10px;
