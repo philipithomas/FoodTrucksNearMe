@@ -8,16 +8,14 @@ $city= strtolower(sanitize($_GET['c']));
 // First, we check if the city exists. If it does, then 
 dbOpen();
 
-$query="select * from city where short=\"".mysql_real_escape_string($city)."\"gi";
+$query="select * from city where short=\"".mysql_real_escape_string($city)."\"";
 $cityResult=mysql_query($query);
 mysql_close();
 
 if (mysql_num_rows($cityResult)!=1) {
 	// No city found
 	// Redirect to 404
-	session_destroy(); // Could be a corrupt session - e.g. city that was deleted 
-	echo "Not found - ".$short.", with query: <br /> ".$query;
-	// header("Location: /404");
+	header("Location: /404");
 	exit();
 	
 }
