@@ -45,7 +45,7 @@ $rgb .= ', ' . hexdec(substr($hex, 4, 2));
 <?php if($background_pattern):?>
 html{
 	background: url(<?php echo '../'.$background_img;?>);
-	font-size: 62.5%;
+	font-size: 100%;
 }
 <?php else:?>
 	
@@ -84,9 +84,8 @@ a:hover {
 	color: <?php echo $text_color;?>;
 	margin-top: 15px;
 	padding: 0 5px;
-	font-size: 1.6em;
-	font-family: sans-serif;
-	font-family: "Museo", sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 }
 .signup{
 	font-style: italic;
