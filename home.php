@@ -26,7 +26,7 @@ require_once('./inc/functions.inc');
 <div id="box">
 	<img src="/img/home/selectLogo.png" alt="logo" <?php echo $attr;?> />
 	<div id="content">
-		<p><h2>Select your City</h2></p>
+		<p><h2>Select your City:</h2></p>
 	
 	</div>
 	
