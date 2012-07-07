@@ -113,9 +113,7 @@ $_SESSION['city']=$city;
 		
 		echo '<div class="row"><div class="span12"><div class="alert '.$alertClass.'"><div align="center">'.$alertMessage.'</div></div></div>';
 	}
-	?>
 
-<?php
 
 // Shows all of the truck widgets
 showTrucks($short); 	
@@ -323,7 +321,7 @@ function showTrucks($short) {
 		
 		// Then that's it!
 			
-		}
+		
 	}
 	
 	// Now we need to know if we need some "padding" in the last
