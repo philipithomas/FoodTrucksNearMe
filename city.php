@@ -33,6 +33,7 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	$alertMessage=$city['alertMessage'];
 	
 // Set the session to be the city
+$_SESSION['city']=$city;
 	
 // Now we generage the city page
 
@@ -68,7 +69,7 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
     <link rel="shortcut icon" href="/img/favicon.ico">
   </head>
 
-  <body  data-spy="scroll" >
+  <body>
       <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -80,8 +81,9 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
           <a class="brand" href="#"><img src="/img/header/<?php echo $short;?>.png"> Food Truck <?php echo $short;?></a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="/home">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/blog">Blog</a></li>
               <li><a href="/contact">Contact</a></li>
 			</ul>
 			<ul class="nav pull-right">
@@ -105,7 +107,6 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
     <div class="container">
 		
 
-	<section id="home">     
 	<?php
 	if ($alert) {
 		// If the database is set to show an alert, show the alert.
@@ -122,10 +123,8 @@ showTrucks($short);
 
 
 ?>
-</div>
     
            
-</section>
 <section id="about">
 <div class="row"><div class="page-header"><h1>About Food Truck Dashboard <?php echo $short;?> </h1></div></div>
 <div class="row"><div class="span8">
