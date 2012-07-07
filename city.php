@@ -289,7 +289,7 @@ function twitterJquery($twitter) {
 **/
 function showTrucks($short) {
 	// First build the query
-	$query= "select * from truck where city = \"$short\"";
+	$query= "select * from truck where city = \"$short\", order by paid, name";// We need to update this to correctly sort
 	
 	// Next pull the info
 	dbOpen();
@@ -331,6 +331,9 @@ function showTrucks($short) {
 	// row - i.e. if there is one truck in the last row, we
 	// need to add two blank "widgets" that are just blank
 	// span tags
+	
+	// Note that each widget is "span4" wide and 
+	// twitter bootstrap uses 12 spans for a row
 	
 	$lastRow=$num%3; // Take the modulus - gives the number of trucks in last row
 	if ($lastRow==0) {

@@ -34,13 +34,19 @@ require_once('./inc/functions.inc');
 		<?php
 		// Now we select the cities from the database
 		// to create the buttons
-		$query= "select short, long from city";
+		$query= "select short, long from city order by long"; // we may need to tweak this query
+		dbOpen();
+		$result=mysql_query($query);
+		mysql_close();
 		
-		
+		// Now we loop through and create each city
+		while ($city = mysql_fetch_assoc($result)) {
+			// Create a button for each city
+			echo '<a href="/city/'.strtolower($city['short']).'" class="btn btn-primary btn-large">'.$city['long'].'</a><br /><br />';
+		}
+		// And now we should have all the cities
 		?>
-		<a href="/city/stl" class="btn btn-primary btn-large">St. Louis</a><br /><br />
-		<a href="/city/cle" class="btn btn-primary btn-large">Cleveland</a><br />
-		
+	
 		
 	</div>
 	<hr />
