@@ -23,7 +23,7 @@ require_once('./inc/functions.inc');
 	<![endif]-->
 </head>
 <body>
-<div id="box">g
+<div id="box">
 	<img src="/img/home/selectLogo.png" alt="Select your City:" <?php echo $attr;?> />
 	<div id="content">
 	<!--	<p><h2>Select your City:</h2></p> -->
@@ -34,7 +34,7 @@ require_once('./inc/functions.inc');
 		<?php
 		// Now we select the cities from the database
 		// to create the buttons
-		$query= "select short, 'long' FROM city ORDER BY 'long' DESC"; // we may need to tweak this query
+		$query= "select short, full FROM city ORDER BY full DESC"; // we may need to tweak this query
 		dbOpen();
 		$result=mysql_query($query);
 		mysql_close();
@@ -42,7 +42,7 @@ require_once('./inc/functions.inc');
 		// Now we loop through and create each city
 		while ($city = mysql_fetch_assoc($result)) {
 			// Create a button for each city
-			echo '<a href="/city/'.strtolower($city['short']).'" class="btn btn-primary btn-large">'.$city['long'].'</a><br /><br />';
+			echo '<a href="/city/'.strtolower($city['short']).'" class="btn btn-primary btn-large">'.$city['full'].'</a><br /><br />';
 		}
 		// And now we should have all the cities
 		?>

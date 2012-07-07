@@ -25,7 +25,7 @@ if (mysql_num_rows($cityResult)!=1) {
 
 $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	$short=strtoupper($city['short']);
-	$long=$city['long'];
+	$long=$city['full'];
 	$twitter=$city['twitter'];
 	$facebook=$city['facebook'];
 	$alert=$city['alert'];
