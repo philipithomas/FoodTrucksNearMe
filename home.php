@@ -45,7 +45,7 @@ require_once('./inc/functions.inc');
 	</div>
 </div>
 <footer> 
- <?php footerText();?> 	<a href="http://www.flickr.com/photos/mastermaq/5875801264/">Background credit</a>.
+ <?php footerText();?> 	<a href="http://www.flickr.com/photos/mastermaq/5875801264/">Background credit</a>.gi
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js"></script>
 </body>
