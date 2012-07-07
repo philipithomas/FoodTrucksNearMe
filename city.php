@@ -113,11 +113,11 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 		echo '<div class="row"><div class="span12"><div class="alert '.$alertClass.'"><div align="center">'.$alertMessage.'</div></div></div>';
 	}
 	?>
-<div class="row">
 
 <?php
-	// Now's the fun part where we iterate through all the widgets
-	
+
+// Shows all of the truck widgets
+showTrucks($short); 	
 	
 
 
@@ -199,18 +199,9 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 
 
 /**
-Function Time
-
-
-**/
-
-
-
-
-
-
-
-
+* Creates a widget for each 
+* city that shows their twitter account info and other stuff
+*/
 function widget($twitter,$name,$url,$menu,$description) {
 		echo '<div class="span4">';
 		
@@ -267,6 +258,9 @@ function widget($twitter,$name,$url,$menu,$description) {
 	
 }
 
+/**
+* This primes the jquery pulling of tweets for a username
+**/
 function twitterJquery($twitter) {
 	
 	// This primes teh jquery pulling of tweets for a particular twitter user. 
@@ -287,6 +281,82 @@ function twitterJquery($twitter) {
     <div id=\''.$twitter.'\' class="query"></div>';
 }
 
+/**
+* This function takes a short code for a city, 
+* then pulls all of the trucks from the database 
+* from that city. It creates the rows and calls
+* the widget function. 
+**/
+function showTrucks($short) {
+	// First build the query
+	$query= "select * from truck where city = \"$short\"";
+	
+	// Next pull the info
+	dbOpen();
+	$result=mysql_query($query);
+	mysql_close();
+	
+	// Let's see how many trucks we have
+	$num=mysql_num_rows($result);
+	
+	// Before we loop through each truck, we set a counter 
+	// so that we know how many trucks there are in a row.
+	$i=0;
+	
+	// We start the first row
+	echo '<div class="row">';
+	// Now we loop through and create each truck
+	while ($truck = mysql_fetch_assoc($result)) {
+		if ($i%3==0 && $i=0) {
+			// 3 trucks per row, so if the truck is a multiple
+			// of three (%3 is modulus / leftover), then 
+			// we create a new row. 
+			// However, we already created the first row, so we
+			// can exclude if i==0
+			echo '</div><div class="row">';
+		}
+		
+		// Increase i by one for the next loop
+		++$i;
+		
+		// Now we display a truck widget
+		widget($truck['twitter'],$truck['name'],$truck['url'],$truck['menu'],$truck['description']);
+		
+		// Then that's it!
+			
+		}
+	}
+	
+	// Now we need to know if we need some "padding" in the last
+	// row - i.e. if there is one truck in the last row, we
+	// need to add two blank "widgets" that are just blank
+	// span tags
+	
+	$lastRow=$num%3; // Take the modulus - gives the number of trucks in last row
+	if ($lastRow==0) {
+		// No action needed - we ended nicely
+	} 
+	elseif ($lastRow==1) {
+		// We need two trucks worth 
+		echo '<div class="span8"></div>';
+	}
+	elseif ($lastRow==2) {
+		// We need one trucks worth 
+		echo '<div class="span4"></div>';
+	}
+	else {
+		// fuck, we shouldn't have this
+		exit();
+	}
+	
+	
+	// And now we finish the last row with a final  closing div 
+	// tag that ends the row
+	echo '</div>';
+	
+	// And that's it folks!
+	
+}
 
 
 

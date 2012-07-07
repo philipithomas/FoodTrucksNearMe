@@ -24,13 +24,20 @@ require_once('./inc/functions.inc');
 </head>
 <body>
 <div id="box">
-	<img src="/img/home/selectLogo.png" alt="logo" <?php echo $attr;?> />
+	<img src="/img/home/selectLogo.png" alt="Select your City:" <?php echo $attr;?> />
 	<div id="content">
-		<p><h2>Select your City:</h2></p>
+	<!--	<p><h2>Select your City:</h2></p> -->
 	
 	</div>
 	
 	<div id="resp">
+		<?php
+		// Now we select the cities from the database
+		// to create the buttons
+		$query= "select short, long from city";
+		
+		
+		?>
 		<a href="/city/stl" class="btn btn-primary btn-large">St. Louis</a><br /><br />
 		<a href="/city/cle" class="btn btn-primary btn-large">Cleveland</a><br />
 		
