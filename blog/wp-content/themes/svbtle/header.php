@@ -55,7 +55,7 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			  </figure>
 		
 			
-			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><img src="http://www.foodtruckdashboard.com/blog/wp-content/uploads/2012/07/blogHeader.png" alt="Food Truck Dashboard Blog"></a>
+			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><img src="/img/blog/blogHeader.png" alt="Food Truck Dashboard Blog"></a>
 		
 			
 			<?php 
