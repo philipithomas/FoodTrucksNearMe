@@ -103,7 +103,7 @@ require_once('./inc/functions.inc');
 <section id="priority">
 	<div class="row"><div class="page-header"><h1>Priority Listings </h1></div></div>
 	<div class="row"><div class="span6">
-		<p>Increase visitors to your truck, gain twitter followers, and contact more customers. For $100 / month, you can secure a priority listing on city page for Food Truck Dashboard. You will be on the first row of your city's dashboard, and you will gain a 'Priority' badge next to your name. <br /><br />
+		<p>Increase visitors to your truck, gain twitter followers, and contact more customers. For $100 / month, you can secure a priority listing on city page for Food Truck Dashboard. You will be on the first row of your city's dashboard, and you will gain a <span class="badge badge-important">Priority</span> badge next to your name. <br /><br />
 			To learn more about priority listings, please use the contact form to the right.
 	      </p>
 	</div>
