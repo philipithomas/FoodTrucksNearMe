@@ -54,8 +54,8 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			    </a>
 			  </figure>
 		
-			
-			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><img src="/img/blog/blogHeader.png" alt="Food Truck Dashboard Blog"></a>
+			<br />
+			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><h3>Food Truck Dashboard</h3><br /><h1>Blog</h1></a>
 		
 			
 			<?php 
@@ -66,16 +66,10 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			
 			<div class="links">
 						<p><a href="/home">Cities</a> </p>
-						<p><a href="/about">About</a> </p>
 						
 			
 					<p><a target="_blank" href="http://twitter.com/foodtruckdash">@FoodTruckDash</a> </p>
 					<p><a href="https://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807">Facebook</a> </p>
-					<p><a href="/contact">Contact</a> </p>
-					
-					
-				
-				<p><a href="<?php bloginfo('rss2_url'); ?>">rss feed</a>     </p>
 			</div><!-- .links -->
 			
 			</div> <!-- center -->
