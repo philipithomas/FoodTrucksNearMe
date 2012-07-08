@@ -305,14 +305,15 @@ function showTrucks($short) {
 	echo '<div class="row">';
 	// Now we loop through and create each truck
 	while ($truck = mysql_fetch_assoc($result)) {
-		++$i;
 		
-		if ($i%3==0 ) {
+		if ($i%3==0 && $i!=0) {
 			// 3 trucks per row, so if the truck is a multiple
 			// of three (%3 is modulus / leftover), then 
 			// we create a new row. 
 			echo '</div><div class="row">';
 		}
+		++$i;
+		
 		
 		// Increase i by one for the next loop
 		
