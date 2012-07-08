@@ -45,6 +45,8 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 	<div id="wrap">
 		
 		<header role="banner">
+			<div align="center" >
+			
 			
 		 	<figure id="user_logo">
 			    <a href="<?php echo site_url(); ?>">
@@ -53,8 +55,8 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			  </figure>
 		
 			
-			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<p><?php bloginfo( 'description' ); ?></p>
+			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><img src="http://www.foodtruckdashboard.com/blog/wp-content/uploads/2012/07/blogHeader.png" alt="Food Truck Dashboard Blog"></a>
+		
 			
 			<?php 
 			ob_start(); 
@@ -63,28 +65,20 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			?>
 			
 			<div class="links">
-				<?php
-					$mypages = get_pages( array( 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
-
-					foreach( $mypages as $page ) {		
-						$content = $page->post_content;
-						if ( ! $content ) // Check for empty page
-							continue;
-
-						$content = apply_filters( 'the_content', $content );
-					?>
-						<p><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></p>
-					<?php
-					}	
-				?>
-				<?php if (isset($options['twitter_username'])): ?>
-					<p><a target="_blank" href="http://twitter.com/<?php echo $options['twitter_username'] ?>">@<?php echo $options['twitter_username'] ?></a> 		</p>
-				<?php endif ?>
-				<?php if (get_option('admin_email')): ?>
-					<p><a href=mailto:"<?php echo get_option('admin_email') ?>">say hello</a>    </p>
-				<?php endif ?>
+						<p><a href="/home">Cities</a> </p>
+						<p><a href="/about">About</a> </p>
+						
+			
+					<p><a target="_blank" href="http://twitter.com/foodtruckdash">@FoodTruckDash</a> </p>
+					<p><a href="https://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807">Facebook</a> </p>
+					<p><a href="/contact">Contact</a> </p>
+					
+					
+				
 				<p><a href="<?php bloginfo('rss2_url'); ?>">rss feed</a>     </p>
 			</div><!-- .links -->
+			
+			</div> <!-- center -->
 		</header>
 		
 		<section id="content" role="main">
