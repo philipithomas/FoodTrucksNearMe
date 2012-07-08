@@ -34,7 +34,7 @@ $city = mysql_fetch_array($cityResult, MYSQL_ASSOC);
 	$alertMessage=$city['alertMessage'];
 	
 // Set the session to be the city
-$_SESSION['city']=$city;
+$_SESSION['city']=strtolower($short);
 	
 // Now we generage the city page
 
@@ -250,7 +250,7 @@ function widget($twitter,$name,$url,$menu,$description) {
 	
 	
 	
-		echo '</div>'; // end span3
+		echo '</div>'; // end span4
 	
 	
 	
