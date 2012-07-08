@@ -65,12 +65,14 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			?>
 			
 			<div class="links">
+				<p><a href="/blog">Blog</a> </p>
+				
 						<p><a href="/home">Cities</a> </p>
+						<p><a href="/about">About</a> </p>
 						
 			
 					<p><a target="_blank" href="http://twitter.com/foodtruckdash">@FoodTruckDash</a> </p>
 					<p><a href="https://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807">Facebook</a> </p>
-					<p><a href="/contact">Contact</a> </p>
 					
 			</div><!-- .links -->
 			
