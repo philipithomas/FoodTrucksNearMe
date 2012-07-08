@@ -305,17 +305,16 @@ function showTrucks($short) {
 	echo '<div class="row">';
 	// Now we loop through and create each truck
 	while ($truck = mysql_fetch_assoc($result)) {
-		if ($i%3==0 && $i=0) {
+		++$i;
+		
+		if ($i%3==0 ) {
 			// 3 trucks per row, so if the truck is a multiple
 			// of three (%3 is modulus / leftover), then 
 			// we create a new row. 
-			// However, we already created the first row, so we
-			// can exclude if i==0
 			echo '</div><div class="row">';
 		}
 		
 		// Increase i by one for the next loop
-		++$i;
 		
 		// Now we display a truck widget
 		widget($truck['twitter'],$truck['name'],$truck['url'],$truck['menu'],$truck['description']);
