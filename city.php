@@ -15,6 +15,7 @@ mysql_close();
 if (mysql_num_rows($cityResult)!=1) {
 	// No city found
 	// Redirect to 404
+	session_destroy(); // delete session
 	header("Location: /404");
 	exit();
 	
@@ -286,7 +287,7 @@ function twitterJquery($twitter) {
 **/
 function showTrucks($short) {
 	// First build the query
-	$query= "select * from truck where city = \"$short\", order by paid, name";// We need to update this to correctly sort
+	$query= "select * from truck where city = \"$short\" order by premium desc, name asc";// We need to update this to correctly sort
 	
 	// Next pull the info
 	dbOpen();

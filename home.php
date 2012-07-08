@@ -34,7 +34,7 @@ require_once('./inc/functions.inc');
 		<?php
 		// Now we select the cities from the database
 		// to create the buttons
-		$query= "select short, full FROM city ORDER BY full DESC"; // we may need to tweak this query
+		$query= "select short, full FROM city ORDER BY full ASC"; // we may need to tweak this query
 		dbOpen();
 		$result=mysql_query($query);
 		mysql_close();
