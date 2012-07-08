@@ -74,13 +74,13 @@ $_SESSION['city']=strtolower($short);
 	if (strtolower($short)=="stl") {
 		// Show the Systematic Revenue tracking code for STL
 		 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
+		}
 	elseif (strtolower($short)=="cle") {
 		// Show the SR tracking code for cleveland
-		echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
-		
+		echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";		
 	}
-		
-	}
+	else { // we need to create more tracking codes!
+		}
 
 ?>
   </head>
