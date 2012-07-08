@@ -55,7 +55,7 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			  </figure>
 		
 			<br />
-			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><h3>Food Truck Dashboard</h3><br /><h1>Blog</h1></a>
+			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><h3>Food Truck Dashboard</h3><h1>Blog</h1></a>
 		
 			
 			<?php 
@@ -70,6 +70,8 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			
 					<p><a target="_blank" href="http://twitter.com/foodtruckdash">@FoodTruckDash</a> </p>
 					<p><a href="https://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807">Facebook</a> </p>
+					<p><a href="/contact">Contact</a> </p>
+					
 			</div><!-- .links -->
 			
 			</div> <!-- center -->
