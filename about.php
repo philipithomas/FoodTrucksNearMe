@@ -46,7 +46,7 @@ require_once('./inc/functions.inc');
                         <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src="/img/header/HOME.png"> Food Truck <?php echo $short;?></a>
+          <a class="brand" href="#"><img src="/img/header/HOME.png"> Food Truck Dashboard</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="/home">Home</a></li>
