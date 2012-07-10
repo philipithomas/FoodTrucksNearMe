@@ -88,7 +88,7 @@ $_SESSION['city']=strtolower($short);
                         <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src="/img/header/<?php echo $short;?>.png"> Food Trucks Near <?php echo $short;?></a>
+          <a class="brand" href="#"><img src="/img/header/<?php echo strtoupper($short);?>.png"> Food Trucks Near <?php echo $short;?></a>
 
           <div class="nav-collapse">
             <ul class="nav">
