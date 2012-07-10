@@ -73,7 +73,7 @@ $_SESSION['city']=strtolower($short);
 <?php
 	// this is where we drop in the Systematic Revenue code
 	
-	 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
+//	 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
 	
 
 
