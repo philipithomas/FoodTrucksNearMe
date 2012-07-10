@@ -44,12 +44,8 @@ $_SESSION['city']=strtolower($short);
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <title>Food Trucks Near <?php echo $short;?></title>
-=======
-    <title>Food Truck Dashboard - <?php echo $short;?></title>
->>>>>>> 3b37e2a35357ca8e5e0d56aed433b4712ee28bae
-    <meta name="description" content="The Dashboard of Food Trucks in <?php echo $long;?> ">
+    <meta name="description" content="The Dashboard of Food Trucks near <?php echo $long;?> ">
 <meta name="viewport" content="user-scalable=no, width=device-width">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
