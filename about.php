@@ -7,7 +7,7 @@ require_once('./inc/functions.inc');
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Food Trucks Near Me</title>
+    <title>Food Trucks Near Me - About</title>
     <meta name="description" content="The Dashboard of Local Food Trucks">
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 
@@ -33,7 +33,7 @@ require_once('./inc/functions.inc');
 
 <?php
 	// this is where we drop in the Systematic Revenue code
-	echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
+	// echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
 ?>
   </head>
 
