@@ -44,8 +44,8 @@ $_SESSION['city']=strtolower($short);
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Food Trucks Near <?php echo $short;?></title>
-    <meta name="description" content="The Dashboard of Food Trucks near <?php echo $long;?> ">
+    <title>Food Trucks Near <?php echo $short; ?></title>
+    <meta name="description" content="The Dashboard of Local Food Trucks">
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -54,29 +54,23 @@ $_SESSION['city']=strtolower($short);
     <![endif]-->
 
 	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-	<script language="javascript" src="/js/jquery.tweet.js" type="text/javascript"></script>
-	<link href="../css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
+	
     <!-- Le styles -->
     <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
-
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/img/favicon.ico">
 
 <?php
 	// this is where we drop in the Systematic Revenue code
-	
-//	 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
-	
-
-
+	echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
 ?>
   </head>
 
