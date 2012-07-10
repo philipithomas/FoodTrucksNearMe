@@ -17,6 +17,7 @@ require_once('./inc/functions.inc');
 <head>
 	<meta charset="utf-8" />
 	<title>Food Trucks Near Me - Select a City</title>
+
 	<link rel="stylesheet" href="css/home.php" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

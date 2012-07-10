@@ -9,7 +9,7 @@ require_once('./inc/functions.inc');
     <meta charset="utf-8">
     <title>Food Trucks Near Me</title>
     <meta name="description" content="The Dashboard of Local Food Trucks">
-<meta name="viewport" content="user-scalable=no, width=device-width">
+	<meta name="viewport" content="user-scalable=no, width=device-width">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -57,6 +57,7 @@ require_once('./inc/functions.inc');
 			<ul class="nav pull-right">
 				
 			  <li> 	<a href="https://twitter.com/foodtrucksnm" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @FoodTrucksNM</a>
+
 				</li>
             </ul>
 
@@ -95,6 +96,7 @@ require_once('./inc/functions.inc');
 	
 	<div style="clear: both"></div>
 	<a href="https://twitter.com/foodtrucksnm" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @FoodTrucksNM</a>
+
 	<div style="clear:both"></div>
 
 </div>
@@ -104,6 +106,7 @@ require_once('./inc/functions.inc');
 	<div class="row"><div class="page-header"><h1>Priority Listings </h1></div></div>
 	<div class="row"><div class="span6">
 		<p>Increase visitors to your truck, gain twitter followers, and contact more customers. For $100 / month, you can secure a priority listing on city page for Food Trucks Near Me. You will be on the first row of your city's dashboard, and you will gain a <span class="label label-important">Priority</span> badge next to your name. <br /><br />
+
 			To learn more about priority listings, please use the contact form to the right.
 	      </p>
 	</div>
@@ -209,6 +212,7 @@ require_once('./inc/functions.inc');
 		    <script language="Javascript" src="http://app.systematicrevenue.com/OnlineForm/counter.php?page=21895311598">
 		        </form>
 				<!-- End Systematic Revenue -->
+
 
 	</div>
 	</div>

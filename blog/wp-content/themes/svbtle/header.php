@@ -55,7 +55,11 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			  </figure>
 		
 			<br />
+<<<<<<< HEAD
 			<a href="http://foodtrucksnearme.com/blog" title="Food Trucks Near Me Blog" rel="home"><h3>Food Trucks Near Me</h3><h2>Blog</h2></a>
+=======
+			<a href="http://foodtruckdashboard.com/blog" title="Food Truck Dashboard Blog" rel="home"><h3>Food Truck Dashboard</h3><h1>Blog</h1></a>
+>>>>>>> 3b37e2a35357ca8e5e0d56aed433b4712ee28bae
 		
 			
 			<?php 
@@ -71,8 +75,13 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 						<p><a href="/about">About</a> </p>
 						
 			
+<<<<<<< HEAD
 					<p><a target="_blank" href="http://twitter.com/foodtrucksNM">@FoodTrucksNM</a> </p>
 					<p><a href="https://www.facebook.com/pages/Food-Trucks-Near-Me/380948325292770">Facebook</a> </p>
+=======
+					<p><a target="_blank" href="http://twitter.com/foodtruckdash">@FoodTruckDash</a> </p>
+					<p><a href="https://www.facebook.com/pages/Food-Truck-Dashboard/423857744324807">Facebook</a> </p>
+>>>>>>> 3b37e2a35357ca8e5e0d56aed433b4712ee28bae
 					
 			</div><!-- .links -->
 			

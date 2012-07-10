@@ -18,6 +18,7 @@ function footerText() {
 	// Just the standardized footer text across the site
 	
 	echo '&copy; <a href="http://foodtrucksnearme.com">Food Trucks Near Me LLC</a> 2012.';
+
 }
 
 function emailValidate($email) {
