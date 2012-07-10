@@ -99,7 +99,7 @@ $_SESSION['city']=strtolower($short);
 			</ul>
 			<ul class="nav pull-right">
 				
-			  <li> 	<a href="https://twitter.com/<?php echo $twitter;?>" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @<?php echo $twitter; ?></a>
+			  <li> 	<a href="https://twitter.com/<?php echo $twitter;?>" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @<?php echo $twitter;?></a>
 				</li>
             </ul>
 
