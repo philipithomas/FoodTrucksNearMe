@@ -25,7 +25,7 @@
 if( isset( $options['color'] ) && '' != $options['color'] ) {
 	$color = $options['color'];
 } else {
-	$color = '#ff0000';
+	$color = '#a1a1a1';
 } 
 ?>
 
@@ -55,12 +55,12 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			  </figure>
 		
 			<br />
-			<a href="http://foodtrucksnearme.com/blog" title="Food Trucks Near Me Blog" rel="home"><h3>Food Trucks Near Me</h3><h2>Blog</h2></a>
+			<a href="http://foodtrucksnearme.com/blog" title="Food Trucks Near Me Blog" rel="home"><h2>Food Trucks Near Me</h2><h3>Blog</h3></a>
 
 		
 			
 			<?php 
-			ob_start(); 
+			ob_start(); g
 			get_option('home');
 			$site_url = ob_get_clean(); 
 			?>
