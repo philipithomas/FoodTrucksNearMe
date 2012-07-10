@@ -1,5 +1,7 @@
 php_flag display_errors on
 
+IndexIgnore *
+
 
 Options +Indexes
 RewriteEngine on
@@ -15,3 +17,5 @@ RewriteRule ^contact(.*)$ contact.php
 RewriteRule ^trucks(.*)$ trucks.php
 RewriteRule ^404/(.*)$ error/404.php
 RewriteRule ^faqs/(.*)$ error/faqs.php
+
+RewriteRule ^css/(.*)$ css/$1
