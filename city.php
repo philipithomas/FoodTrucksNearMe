@@ -64,7 +64,7 @@ $_SESSION['city']=strtolower($short);
         padding-bottom: 40px;
       }
     </style>
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- <link href="../css/bootstrap-responsive.css" rel="stylesheet"> -->
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/img/favicon.ico">
