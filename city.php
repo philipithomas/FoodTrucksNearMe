@@ -46,7 +46,7 @@ $_SESSION['city']=strtolower($short);
     <meta charset="utf-8">
     <title>Food Trucks Near <?php echo $short;?></title>
     <meta name="description" content="The Dashboard of Food Trucks near <?php echo $long;?> ">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="user-scalable=no, width=device-width">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -73,24 +73,21 @@ $_SESSION['city']=strtolower($short);
 <?php
 	// this is where we drop in the Systematic Revenue code
 	
-//	 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
+	 echo "<script>(function (){var url = window.location; var oImg = document.createElement(\"img\");oImg.setAttribute('src','http://app.systematicrevenue.com/TrackWebPage?ACID=41&URL=' + url);})(); </script>";
 	
 
 
 ?>
   </head>
 
-  <body  data-spy="scroll" >
+  <body>
       <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#"><img src="/img/header/<?php echo strtoupper($short);?>.png"> Food Trucks Near <?php echo $short;?></a>
 
