@@ -66,7 +66,6 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 			?>
 			
 			<div class="links">
-				<p><a href="/blog">Blog</a> </p>
 				
 						<p><a href="/home">Cities</a> </p>
 						<p><a href="/about">About</a> </p>
