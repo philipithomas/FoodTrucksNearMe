@@ -57,14 +57,15 @@ $_SESSION['city']=strtolower($short);
 	<script language="javascript" src="/js/jquery.tweet.js" type="text/javascript"></script>
 	<link href="../css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
     <!-- Le styles -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--<link href="../css/bootstrap.css" rel="stylesheet">-->
+   <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    <!-- <link href="../css/bootstrap-responsive.css" rel="stylesheet"> -->
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/img/favicon.ico">
