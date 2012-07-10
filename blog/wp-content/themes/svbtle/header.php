@@ -60,8 +60,8 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 		
 			
 			<?php 
-			ob_start(); g
-		//	get_option('home');
+			ob_start(); 
+			get_option('home');
 			$site_url = ob_get_clean(); 
 			?>
 			
