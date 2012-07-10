@@ -54,7 +54,8 @@ $_SESSION['city']=strtolower($short);
     <![endif]-->
 
 	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-	
+	<script language="javascript" src="/js/jquery.tweet.js" type="text/javascript"></script>
+	<link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
     <!-- Le styles -->
     <link href="../css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
