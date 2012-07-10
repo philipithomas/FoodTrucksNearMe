@@ -11,7 +11,7 @@ require_once('./inc/functions.inc');
     <meta name="description" content="The Dashboard of Local Food Trucks">
 	<meta name="viewport" content="user-scalable=no, width=device-width">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML ehref="mailto:support@foodtrucksnearme.com"lements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.google.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -52,7 +52,7 @@ require_once('./inc/functions.inc');
               <li class="active"><a href="/home">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="mailto:support@foodtrucksnearme.com">Contact</a></li>
 			</ul>
 			<ul class="nav pull-right">
 				
@@ -87,8 +87,8 @@ require_once('./inc/functions.inc');
 <div class="row"><div class="span8">
 	<p>Food Trucks Near Me shows the latest updates from all of your city's food trucks. It pulls their latest tweets so you can know where they are, and it links to their websites and twitter pages. <br /> /><br />
 		The website was founded in 2012 by <a href="http://philipithomas.com">Philip I. Thomas</a> in 2012 as "Food Truck STL." The site has since expanded to multiple cities and continues to grow as apart of the Food Trucks Near Me LLC brand.<br /><br />
-	If you own or operate a food truck and wish to be listed on this page, or if your listing is inaccurate, please <a href="/contact">contact us</a>. Listing on Food Trucks Near Me is free! <a href="/about#priority">Priority listings are available in each city</a><br /><br />
-	Food Trucks Near Me is not associated with any food trucks. Provided menus and prices are provided for informational purposes and are not guaranteed to be correct. To report errors, please <a href="/contact">contact us</a>.
+	If you own or operate a food truck and wish to be listed on this page, or if your listing is inaccurate, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>. Listing on Food Trucks Near Me is free! <a href="/about#priority">Priority listings are available in each city</a><br /><br />
+	Food Trucks Near Me is not associated with any food trucks. Provided menus and prices are provided for informational purposes and are not guaranteed to be correct. To report errors, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>.
       </p>
 </div>
 <div class="span4">
@@ -210,6 +210,7 @@ require_once('./inc/functions.inc');
 		        document.getElementById("si" + "mple" + "_spc").value = "21895311598-21895311598";
 		    </script>
 		    <script language="Javascript" src="http://app.systematicrevenue.com/OnlineForm/counter.php?page=21895311598">
+		</script>
 		        </form>
 				<!-- End Systematic Revenue -->
 
