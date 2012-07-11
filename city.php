@@ -91,7 +91,7 @@ $_SESSION['city']=strtolower($short);
               <li><a href="/home">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="mailto:support@foodtrucksnearme.com">Contact</a></li>
 			</ul>
 			<ul class="nav pull-right">
 				
@@ -134,8 +134,8 @@ showTrucks($short);
 <div class="row"><div class="page-header"><h1>About Food Truck <?php echo $short;?> </h1></div></div>
 <div class="row"><div class="span8">
 	<p>The Dashboard of Food Trucks near <?php echo $long;?>. It pulls the latest tweets from the twitter pages of local food trucks so you can know where they are, and it links to their websites and twitter pages. The <a href="http://twitter.com/<?php echo $twitter;?>">@<?php echo $twitter;?> twitter account</a> combines the tweets of all of the food trucks in <?php $long;?> to make keeping up with the latest culinary hotspots easy. <br /><br />
-	If you own or operate a food truck and wish to be listed on this page, or if your listing is inaccurate, please <a href="/contact">contact us</a>. Listing on Food Truck Dashboard is free!<br /><br />
-	Food Truck Dashboard LLC is not associated with any food trucks. Provided menus and prices are provided for informational purposes and are not guaranteed to be correct. To report errors, please <a href="/contact">contact us</a>.
+	If you own or operate a food truck and wish to be listed on this page, or if your listing is inaccurate, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>. Listing on Food Truck Dashboard is free!<br /><br />
+	Food Truck Dashboard LLC is not associated with any food trucks. Provided menus and prices are provided for informational purposes and are not guaranteed to be correct. To report errors, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>.
 
       </p>
 </div>
