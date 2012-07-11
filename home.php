@@ -52,7 +52,7 @@ require_once('./inc/functions.inc');
 	</div>
 	<hr />
 	<div id="social">
-		<a href="http://twitter.com/foodtrucksnm" target="_BLANK"><img src="/img/home/twitter.png" alt="Twitter" width="32" height="32" /></a>
+		<a href="http://twitter.com/nearfoodtrucks" target="_BLANK"><img src="/img/home/twitter.png" alt="Twitter" width="32" height="32" /></a>
 		<a href="https://www.facebook.com/pages/Food-Trucks-Near-Me/380948325292770" target="_BLANK"><img src="/img/home/facebook.png" alt="Facebook" width="32" height="32" /></a>
 		<a href="/blog"><img src="/img/home/blogger.png" alt="Blog" width="32" height="32" /></a>
 	</div>
