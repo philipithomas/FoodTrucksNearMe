@@ -85,7 +85,7 @@ require_once('./inc/functions.inc');
 <section id="about">
 <div class="row"><div class="page-header"><h1>About Food Trucks Near Me </h1></div></div>
 <div class="row"><div class="span8">
-	<p>Food Trucks Near Me shows the latest updates from all of your city's food trucks. It pulls their latest tweets so you can know where they are, and it links to their websites and twitter pages. <br /> /><br />
+	<p>Food Trucks Near Me shows the latest updates from all of your city's food trucks. It pulls their latest tweets so you can know where they are, and it links to their websites and twitter pages. <br /><br />
 		The website was founded in 2012 by <a href="http://philipithomas.com">Philip I. Thomas</a> in 2012 as "Food Truck STL." The site has since expanded to multiple cities and continues to grow as apart of the Food Trucks Near Me LLC brand.<br /><br />
 	If you own or operate a food truck and wish to be listed on this page, or if your listing is inaccurate, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>. Listing on Food Trucks Near Me is free! <a href="/about#priority">Priority listings are available in each city</a><br /><br />
 	Food Trucks Near Me is not associated with any food trucks. Provided menus and prices are provided for informational purposes and are not guaranteed to be correct. To report errors, please <a href="mailto:support@foodtrucksnearme.com">contact us</a>.
