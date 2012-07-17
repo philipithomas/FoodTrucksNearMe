@@ -56,7 +56,7 @@ require_once('./inc/functions.inc');
 			</ul>
 			<ul class="nav pull-right">
 				
-			  <li> 	<a href="https://twitter.com/nearfoodtrucks" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @nearfoodtrucks</a>
+			  <li> 	<a href="https://twitter.com/FoodTrucksNear" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @FoodTrucksNear</a>
 
 				</li>
             </ul>
@@ -95,7 +95,7 @@ require_once('./inc/functions.inc');
 <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FFood-Trucks-Near-Me%2F380948325292770&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;appId=128443697296661" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
 	
 	<div style="clear: both"></div>
-	<a href="https://twitter.com/nearfoodtrucks" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @nearfoodtrucks</a>
+	<a href="https://twitter.com/FoodTrucksNear" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @FoodTrucksNear</a>
 
 	<div style="clear:both"></div>
 

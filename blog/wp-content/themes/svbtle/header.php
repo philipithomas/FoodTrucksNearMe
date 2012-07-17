@@ -71,7 +71,7 @@ if( isset( $options['color'] ) && '' != $options['color'] ) {
 						<p><a href="/about">About</a> </p>
 						
 			
-					<p><a target="_blank" href="http://twitter.com/nearfoodtrucks">@NearFoodTrucks</a> </p>
+					<p><a target="_blank" href="http://twitter.com/FoodTrucksNear">@FoodTrucksNear</a> </p>
 					<p><a href="https://www.facebook.com/pages/Food-Trucks-Near-Me/380948325292770">Facebook</a> </p>
 					
 			</div><!-- .links -->
