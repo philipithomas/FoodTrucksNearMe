@@ -112,8 +112,72 @@ $_SESSION['city']=strtolower($short);
          
 
     <div class="container">
+	
+	<?php
+	// now we show some ads using responsive design
+	?>
 		
-
+	<div class="row visible-desktop">
+		<div class="span12">
+			<div align="center">
+			
+				<!-- Desktop Ad, >768px -->
+				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-8937564425964726";
+				/* ResponsiveLarge */
+				google_ad_slot = "5142289930";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			
+			</div>
+		</div>
+	</div>
+	
+	<div class="row visible-tablet">
+		<div class="span12">
+			<div align="center">
+				<!-- Tablet ad, {>=480px,<=767px}-->
+				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-8937564425964726";
+				/* Responsive Tablet */
+				google_ad_slot = "5511447366";
+				google_ad_width = 468;
+				google_ad_height = 60;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="row visible-phone">
+		<div class="span12">
+			<div align="center">
+				<!-- Phone Ad, <480px -->
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-8937564425964726";
+					/* Responsive Mobile */
+					google_ad_slot = "2449032879";
+					google_ad_width = 320;
+					google_ad_height = 50;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+			</div>
+		</div>
+	</div>
+	
 	<?php
 	if ($alert) {
 		// If the database is set to show an alert, show the alert.
