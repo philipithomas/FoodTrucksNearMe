@@ -9,7 +9,7 @@ if (isset($_SESSION['city'])) {
 	// Mod rewrite redirects to city.php
 	header("Location: /city/".strtolower($_SESSION['city']));
 	exit;
-}
+} 
 else {
 	// If no city, go to home page to select a city
 	header("Location: /home");
