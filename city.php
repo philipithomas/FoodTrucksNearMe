@@ -116,76 +116,13 @@ $_SESSION['city']=strtolower($short);
 	<?php
 	// now we show some ads using responsive design
 	?>
-		
-	<div class="row visible-desktop">
-		<div class="span12">
-			<div align="center">
-			
-				<!-- Desktop Ad, >768px -->
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-4435251862665797";
-				/* Responsive Desktop */
-				google_ad_slot = "3408417952";
-				google_ad_width = 728;
-				google_ad_height = 90;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>
-			
-			</div>
-		</div>
-	</div>
-	
-	<div class="row visible-tablet">
-		<div class="span12">
-			<div align="center">
-				<!-- Tablet ad, {>=480px,<=767px}-->
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-4435251862665797";
-				/* Responsive Tablet */
-				google_ad_slot = "1217424379";
-				google_ad_width = 468;
-				google_ad_height = 60;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>
-				
-			</div>
-		</div>
-	</div>
-	
-	
-	<div class="row visible-phone">
-		<div class="span12">
-			<div align="center">
-				<!-- Phone Ad, <480px -->
-					<script type="text/javascript"><!--
-					google_ad_client = "ca-pub-4435251862665797";
-					/* Responsive Mobile */
-					google_ad_slot = "8986137312";
-					google_ad_width = 320;
-					google_ad_height = 50;
-					//-->
-					</script>
-					<script type="text/javascript"
-					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-					</script>
-			</div>
-		</div>
-	</div>
-	
+	adRow();	
 	<?php
 	if ($alert) {
 		// If the database is set to show an alert, show the alert.
 		
 		echo '<div class="row"><div class="span12"><div class="alert '.$alertClass.'"><div align="center">'.$alertMessage.'</div></div></div>';
 	}
-
-
 // Shows all of the truck widgets
 showTrucks($short); 	
 	
@@ -381,7 +318,12 @@ function showTrucks($short) {
 			// 3 trucks per row, so if the truck is a multiple
 			// of three (%3 is modulus / leftover), then 
 			// we create a new row. 
-			echo '</div><div class="row">';
+			echo '</div>';
+			if ($i==3||$i==6) {
+				// Show an ad after the first two rows
+				adRow();
+			}
+			echo '<div class="row">';
 		}
 		++$i;
 		
@@ -431,6 +373,71 @@ function showTrucks($short) {
 }
 
 
+function adRow() {
+		
+	echo '<div class="row visible-desktop">
+		<div class="span12">
+			<div align="center">
+			
+				<!-- Desktop Ad, >768px -->
+				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-4435251862665797";
+				/* Responsive Desktop */
+				google_ad_slot = "3408417952";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			
+			</div>
+		</div>
+	</div>
+	
+	<div class="row visible-tablet">
+		<div class="span12">
+			<div align="center">
+				<!-- Tablet ad, {>=480px,<=767px}-->
+				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-4435251862665797";
+				/* Responsive Tablet */
+				google_ad_slot = "1217424379";
+				google_ad_width = 468;
+				google_ad_height = 60;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="row visible-phone">
+		<div class="span12">
+			<div align="center">
+				<!-- Phone Ad, <480px -->
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-4435251862665797";
+					/* Responsive Mobile */
+					google_ad_slot = "8986137312";
+					google_ad_width = 320;
+					google_ad_height = 50;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+			</div>
+		</div>
+	</div>';
+
+
+}
 
 ?>
 
