@@ -3,14 +3,6 @@ session_start();
 require_once('./inc/functions.inc');
 
 
-// Force SSL
-if($_SERVER["HTTPS"] != "on") {
-   header("HTTP/1.1 301 Moved Permanently");
-   header("Location: https://www.foodtrucksnearme.com/premium");
-   exit();
-}
-
-
 
 // redirected here from /home via .htaccess
 
