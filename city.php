@@ -115,9 +115,10 @@ $_SESSION['city']=strtolower($short);
 	
 	<?php
 	// now we show some ads using responsive design
-	?>
+	
 	adRow();	
-	<?php
+	
+
 	if ($alert) {
 		// If the database is set to show an alert, show the alert.
 		
