@@ -3,6 +3,15 @@ session_start();
 require_once('./inc/functions.inc');
 
 
+// Force SSL
+if($_SERVER["HTTPS"] != "on") {
+   header("HTTP/1.1 301 Moved Permanently");
+   header("Location: https://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"]);
+   exit();
+}
+
+
+
 // redirected here from /home via .htaccess
 
 /*
@@ -125,4 +134,4 @@ echo '<!DOCTYPE html>
 
 
 
-?>
+?>gg
