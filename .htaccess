@@ -17,5 +17,5 @@ RewriteRule ^contact(.*)$ contact.php
 RewriteRule ^trucks(.*)$ trucks.php
 RewriteRule ^404/(.*)$ error/404.php
 RewriteRule ^faqs/(.*)$ error/faqs.php
-RewriteRule ^premium(*.*)$ premium.php
+RewriteRule ^premium(.*)$ premium.php
 
