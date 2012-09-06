@@ -398,7 +398,7 @@ function adRow() {
 	</div>';
 	
 	
-	// echo '<div class="row visible-tablet">
+	 $other= '<div class="row visible-tablet">
 		<div class="span12">
 			<div align="center">
 				<!-- Tablet ad, {>=480px,<=767px}-->
